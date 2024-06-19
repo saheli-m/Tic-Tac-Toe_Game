@@ -8,11 +8,27 @@ body {
   text-align: center;
 }
 
+main {
+  padding: 15px 0;
+}
+
 .container {
   height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  color: #FDFDD8;
+  background-color: #2e2e20;
+  /* font-family: "Wix Madefor Display", sans-serif; */
+  font-weight: 200;
+  width: 200px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .game {
@@ -46,7 +62,7 @@ body {
 }
 
 #msg {
-  color: rgb(45, 45, 13);
+  color: #FBFBB1;
 }
 
 .msgContainer {
@@ -60,4 +76,73 @@ body {
 
 .hide {
   display: none;
+}
+
+.line-through {
+  position: relative;
+}
+
+.line-through:after {
+  content: "";
+  position: absolute;
+  background-color: #383A2C;
+  transform-origin: center;
+}
+
+.row-1:after {
+  width: 100%;
+  height: 4px;
+  top: 50%;
+  left: 0;
+}
+
+.row-2:after {
+  width: 100%;
+  height: 4px;
+  top: 50%;
+  left: 0;
+}
+
+.row-3:after {
+  width: 100%;
+  height: 4px;
+  top: 50%;
+  left: 0;
+}
+
+.col-1:after {
+  height: 100%;
+  width: 4px;
+  top: 0;
+  left: 50%;
+}
+
+.col-2:after {
+  height: 100%;
+  width: 4px;
+  top: 0;
+  left: 50%;
+}
+
+.col-3:after {
+  height: 100%;
+  width: 4px;
+  top: 0;
+  left: 50%;
+}
+
+.diag-1:after {
+  width: 130%;
+  height: 4px;
+  top: 48%;
+  left: -15%;
+  transform: rotate(45deg);
+}
+
+.diag-2:after {
+  width: 130%;
+  height: 4px;
+  top: 48%;
+  left: -15%;
+  transform: rotate(-45deg);
 }
